@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Extractor</title>
+  <link rel = "icon" href = "wmn2.png" type = "image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      
+  <div class="container">
+          
+	         <img src="wmn2.png" class="logo-img" alt="logo" >
+	    
+		 
+      <h1> Email Extractor </h1>
+
+
+    <label for="emailExtension">Entrez l'extension de l'email:</label>
+    <input type="text" id="emailExtension" placeholder="Entrez l'extension (par exemple, gmail.com)">
+    <br>
+    <textarea id="emailInput" rows="20" placeholder="Entrez les e-mails ici"></textarea>
+    <br>
+    <button onclick="extractEmails()">Extraire les e-mails</button>
+    <button onclick="copyResults()" id="copyButton" disabled>Copier les résultats</button>
+    <ul id="emailList"></ul>
+    <p id="errorMsg" class="error-msg"></p>
+	
+	      <footer>
+        <span>&copy; 2023 WMN2 .</span> 
+		 <span> Created by Rachid TOUNSY </span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
